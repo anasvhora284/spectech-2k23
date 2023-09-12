@@ -1,11 +1,116 @@
+@font-face {
+  font-family: 'Valorant';
+  src: url(./Fonts/ValorantFont.ttf);
+}
+
 .App {
   text-align: center;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: flex-start;
+}
+
+.AppBar {
+  background: rgba( 255, 255, 255, 0 ) !important;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.mianBody {
+  background: url('./Images/bg.svg');
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.specLogo {
+  width: 10%;
+  margin:auto 40% auto 8%; 
+}
+
+.AnimatedLogo {
+  margin: 5% auto auto auto;
+}
+
+.OptionBox {
+  width: 5%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.timeDots {
+  color: #fff;
+}
+
+.expired-notice {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 0 0.75rem 0 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-counter .countdown.danger {
+  color: #ff0000;
+}
+
+.show-counter .countdown > p {
+  margin: 0;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
