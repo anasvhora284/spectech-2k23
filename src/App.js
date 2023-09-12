@@ -59,7 +59,7 @@ function App() {
       <div className='mianBody'>
         <div className='navBar'>
           <AppBar position="fixed" className='AppBar'>
-            <Container maxWidth="m" className='home' id='home'>
+            <Container maxWidth="m">
               <Toolbar disableGutters>
                 <Button variant="text" style={{display: 'contents'}}>
                 <img
@@ -144,7 +144,7 @@ function App() {
             </Container>
           </AppBar>
         </div>
-        <Container style={{height: '100vh', width: '100vw', fontFamily: 'Valorant', color: '#fff', display: 'flex', flexDirection: 'row', justifyContent: 'space-between',alignContent: 'center', alignItems: 'center'}}>
+        <Container className='home' id='home' style={{height: '100vh', width: '100vw', fontFamily: 'Valorant', color: '#fff', display: 'flex', flexDirection: 'row', justifyContent: 'space-between',alignContent: 'center', alignItems: 'center'}}>
           <div className='Welcome' style={{display: 'flex', flexDirection:'column',}}>
             <p style={{fontSize: '4rem', color: '#332f79'}}>Welcome to <br></br><span style={{color: '#d06c16'}}> the Spec Tech </span><br></br> 2<span style={{color: '#d06c16'}}>K</span>23</p>
             <p style={{fontSize: '1.3rem', color: '#cf6c18'}}>Get ready for a thrilling journey into the <br></br> future of technology at Spec Tech 2k23, <br></br> where innovation meets inspiration.</p>
@@ -176,7 +176,7 @@ function App() {
               </div>    
             </div>
             <div className='AboutUsVector' style={{ display: 'flex', flexDirection: 'row', marginLeft: '13%', justifyItems: 'flex-start' }}>
-              <img className='AboutUsIllustration' src={AboutUsIllustration} style={{margin: 'auto 8% auto 8%'}} alt='AboutUsIllustration'></img>
+              <img className='AboutUsIllustration' src={AboutUsIllustration} alt='AboutUsIllustration'></img>
             </div>
           </div>
         </Container>
