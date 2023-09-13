@@ -192,7 +192,9 @@ function App() {
 
           <div className='EventsCardsDiv'>
             <div className='ThreeEventCards'>
-              <EventCard EventImg={ComingSoonImg} EventName='Web-O-Master' EventDiscription='In this Event We will give you a figma of the webpage you have make in given time.'/>
+            <EventCard EventImg={ComingSoonImg} EventName='Web-O-Master' EventDiscription='In this Event We will give you a figma of the webpage you have make in given time.'/>
+            <EventCard EventImg={ComingSoonImg} EventName='Bits & Bytes' EventDiscription='You are gonna Compete with other to build the best and fastest working PC assembling in this contest'/>
+            <EventCard EventImg={ComingSoonImg} EventName='Treasure Hunt' EventDiscription='Find the clues and hunt the treasure before other. The fastest Clue & Treasure Hunter get the prize.'/>
             </div>
           </div>
         </Container>
