@@ -1,0 +1,1 @@
+export const pages = ['Schedule', 'About', 'Events', 'Sponsor', 'Team', 'Glimps'];

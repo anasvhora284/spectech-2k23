@@ -1,7 +1,28 @@
 @font-face {
   font-family: 'Valorant';
-  src: url(./Fonts/ValorantFont.ttf);
+  src: url(./Assets/Fonts/ValorantFont.ttf);
 }
+
+/* EventCard common componant css */
+
+.EventCards {
+  background: rgba(21, 21, 36, 0.35);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border-radius: 7%;
+  border: 1px solid rgb(156, 75, 255);
+}
+
+.EventCards > .MuiPaper-root {
+  border-radius: 7%;
+}
+
+.Componants {
+  margin: 5%;
+}
+
+/* EventCard common componant css Ends here. */
 
 .App {
   text-align: center;
@@ -25,14 +46,16 @@
 }
 
 .mianBody {
-  background: url('./Images/bg.svg');
+  background: url('./Assets/Images/bg.svg');
   background-size: 100%;
   background-attachment: fixed;
+  padding-left: 5%;
+
 }
 
 .specLogo {
-  width: 10%;
-  margin:auto 40% auto 8%; 
+  max-width: 13%;
+  margin:auto 40% auto 4%; 
 }
 
 .AnimatedLogo {
@@ -43,13 +66,8 @@
   width: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .home {
-  height: 100vh; 
+  height: 100%; 
   width: 100vw;
   font-family: 'Valorant';
   color: #fff;
@@ -163,7 +181,6 @@
   width: 100vw;
   font-family: Valorant;
   color: #fff;
-  margin-bottom: 8%;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -192,6 +209,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.EventsCardsDiv {
+  display: flex;
+  flex-direction: column;
 }
 
 .expired-notice {

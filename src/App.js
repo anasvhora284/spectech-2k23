@@ -1,6 +1,7 @@
 import './App.css'
 import * as React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
@@ -10,11 +11,13 @@ import Menu from '@mui/material/Menu'
 import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
-import SpecLogoIcon from './Images/SpecLogo.png'
-import SpectechAnimated from './Images/tech-fauget-unscreen.gif'
-import CountDown from './hooks/CountDown';
-import AboutUsIllustration from './Images/aboutus-illustartion.png'
-import { Link } from 'react-scroll';
+import CountDown from './Componants/CountDown';
+import SpecLogoIcon from './Assets/Images/SpecLogo.png'
+import SpectechAnimated from './Assets/Images/tech-fauget-unscreen.gif'
+import AboutUsIllustration from './Assets/Images/aboutus-illustartion.png'
+import EventCard from './Componants/EventCard.js'
+import { pages } from './constants';
+import ComingSoonImg from './Assets/Images/ComingSoon.jpg'
 
 function App() {
   const THREE_DAYS_IN_MS = 78 * 24 * 60 * 60 * 1000;
@@ -22,10 +25,8 @@ function App() {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
-  const pages = ['Schedule', 'About', 'Events', 'Sponsor', 'Team', 'Glimps'];
-
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [currentPage, setCurrentPage] = useState('Schedule'); // Initialize with the first page
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [currentPage, setCurrentPage] = useState(''); // Initialize with the first page
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -59,7 +60,7 @@ function App() {
       <div className='mianBody'>
         <div className='navBar'>
           <AppBar position="fixed" className='AppBar'>
-            <Container maxWidth="m">
+            <Container maxWidth="lg">
               <Toolbar disableGutters>
                 <Button variant="text" style={{display: 'contents'}}>
                 <img
@@ -144,6 +145,7 @@ function App() {
             </Container>
           </AppBar>
         </div>
+
         <Container className='home' id='home'>
           <div className='Welcome'>
             <p style={{fontSize: '4rem', color: '#332f79'}}>Welcome to <br></br><span style={{color: '#d06c16'}}> the Spec Tech </span><br></br> 2<span style={{color: '#d06c16'}}>K</span>23</p>
@@ -185,6 +187,12 @@ function App() {
           <div className='EventsHeading'>
             <div className='Eventsbg'>
               <p>Events</p>
+            </div>
+          </div>
+
+          <div className='EventsCardsDiv'>
+            <div className='ThreeEventCards'>
+              <EventCard EventImg={ComingSoonImg} EventName='Web-O-Master' EventDiscription='In this Event We will give you a figma of the webpage you have make in given time.'/>
             </div>
           </div>
         </Container>
