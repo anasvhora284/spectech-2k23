@@ -144,42 +144,51 @@ function App() {
             </Container>
           </AppBar>
         </div>
-        <Container className='home' id='home' style={{height: '100vh', width: '100vw', fontFamily: 'Valorant', color: '#fff', display: 'flex', flexDirection: 'row', justifyContent: 'space-between',alignContent: 'center', alignItems: 'center'}}>
-          <div className='Welcome' style={{display: 'flex', flexDirection:'column',}}>
+        <Container className='home' id='home'>
+          <div className='Welcome'>
             <p style={{fontSize: '4rem', color: '#332f79'}}>Welcome to <br></br><span style={{color: '#d06c16'}}> the Spec Tech </span><br></br> 2<span style={{color: '#d06c16'}}>K</span>23</p>
             <p style={{fontSize: '1.3rem', color: '#cf6c18'}}>Get ready for a thrilling journey into the <br></br> future of technology at Spec Tech 2k23, <br></br> where innovation meets inspiration.</p>
           </div>
-          <div className='LogoAnimation' style={{display: 'flex',flexDirection: 'row', justifyItems: 'flex-start'}}>
-            <img  style={{ width: 'auto', height: 'auto'}} src={SpectechAnimated} alt="animated Logo" className='AnimatedLogo' />
+          <div className='LogoAnimation'>
+            <img src={SpectechAnimated} alt="animated Logo" className='AnimatedLogo' />
           </div>
         </Container>
         
-        <Container style={{width: '100vw', fontFamily: 'Valorant', color: '#fff', display: 'flex', flexDirection: 'row', justifyContent: 'space-around',alignContent: 'center', alignItems: 'center'}}>
-          <div className='EventStartsText' style={{display: 'flex', flexDirection:'column',}}>
-            <p style={{fontSize: '5rem', textShadow: '0 0 5px #ff0000',}}>The <span style={{color: '#d06c16'}}>Event</span> <br></br> <span style={{color: '#332f79'}}>Starts</span> In!</p>
+        <Container className='CountDownContainer'>
+          <div className='EventStartsText'>
+            <p style={{fontSize: '5rem', textShadow: '0 0 5px #ff0000',}}>The Event <br></br> Starts In!</p>
           </div>
-          <div className='CountDown' style={{display: 'flex',flexDirection: 'row', marginLeft: '20%', justifyItems: 'flex-start'}}>
+          <div className='CountDownDiv'>
             <CountDown style={{fontSize: '2rem'}} targetDate={dateTimeAfterThreeDays} />
           </div>
         </Container>
 
-        <Container className='About' id='about' style={{ width: '100vw', fontFamily: 'Valorant', color: '#fff', display: 'flex', margin: '0 0 0 8%', flexDirection: 'column', justifyContent: 'center', alignContent: 'center', alignItems: 'center' }}>
-          <div className='AboutUsHeading' style={{ position: 'relative', marginBottom: '8%' }}>
+        <Container className='About' id='about'>
+          <div className='AboutUsHeading'>
             <div className='AboutUsbg'>
-              <p style={{ fontSize: '10em', zIndex: 'initial', opacity: '0.5', margin: '0', textShadow: '0 0 5px #ff0000', }}>About Us</p>
+              <p>About Us</p>
             </div>
           </div>
-          <div className='AboutUsContant' style={{ display: 'flex', flexDirection: 'row', marginBottom: '8%'  }}>
+          <div className='AboutUsContant'>
             <div className='AboutUsText'>
-              <div className='AboutusCard' sx={{ minWidth: 275, alignItems: 'center', color: '#fff'}}>
+              <div className='AboutusCard'>
                 <p className='CardText'>SPEC is a student centric, multidisciplinary, research and holistic development oriented not for profit campus with a view to promote welfare. Within a short span of time, since 2007 till date, it has emerged as a campus known for teaching, learning & activities across the state of Gujarat. The campus, spread across the sprawling lush green environment and a bit away from noise and pollution of city, has number of institutes, named after Iron man of India. All technically professional courses are affiliated with Gujarat Technological University.</p>
               </div>    
             </div>
-            <div className='AboutUsVector' style={{ display: 'flex', flexDirection: 'row', marginLeft: '13%', justifyItems: 'flex-start' }}>
+            <div className='AboutUsVector'>
               <img className='AboutUsIllustration' src={AboutUsIllustration} alt='AboutUsIllustration'></img>
             </div>
           </div>
         </Container>
+        
+        <Container className='EventsContainer' id='events'>
+          <div className='EventsHeading'>
+            <div className='Eventsbg'>
+              <p>Events</p>
+            </div>
+          </div>
+        </Container>
+        
       </div>
     </div>
   );
