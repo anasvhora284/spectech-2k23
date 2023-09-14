@@ -33,6 +33,7 @@ const App = () => {
   };
 
   const handlePageChange = (page) => {
+    setPage('Home')
     setCurrentPage(page)
     handleCloseNavMenu();
 
