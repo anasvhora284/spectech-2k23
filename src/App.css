@@ -53,8 +53,6 @@
   background: url('./Assets/Images/bg.svg');
   background-size: 100%;
   background-attachment: fixed;
-  padding-left: 5%;
-
 }
 
 .specLogo {
@@ -278,6 +276,18 @@
   font-size: 0.75rem;
   line-height: 1rem;
 }
+
+
+/* Events Page Css Starts Here */
+
+.EventsPageDiv {
+  margin-top: 10%;
+  font-size: 2rem;
+  font-family: Valorant;
+  color: #fff;
+}
+
+/* Events Page Css Ends Here */
 
 
 @media (prefers-reduced-motion: no-preference) {

@@ -15,12 +15,7 @@ const ExpiredNotice = () => {
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div className="show-counter">
-      <a
-        href="https://tapasadhikary.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="countdown-link"
-      >
+      <div className="countdown-link">
         <DateTimeDisplay value={days} type={'Days'} />
         <p className='timeDots'>:</p>
         <DateTimeDisplay value={hours} type={'Hours'} />
@@ -28,7 +23,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         <DateTimeDisplay value={minutes} type={'Mins'} />
         <p className='timeDots'>:</p>
         <DateTimeDisplay value={seconds} type={'Seconds'} />
-      </a>
+      </div>
     </div>
   );
 };
