@@ -24,7 +24,12 @@ const Header = () => {
       setCurrentPage("Events");
     }
     if (location.pathname.includes("home")) {
+      Scrollto("home");
       setCurrentPage("Home");
+    }
+    if (location.pathname.includes("about")) {
+      Scrollto("about");
+      setCurrentPage("About");
     }
   }, [location]);
 
@@ -35,10 +40,14 @@ const Header = () => {
   const handlePageChange = (page) => {
     if (page === "Home") {
       navigate("/home");
+    } else if (page === "About") {
+      navigate("/about");
     }
     setCurrentPage(page);
     handleCloseNavMenu();
+  };
 
+  const Scrollto = (page) => {
     const elementId = page.toLowerCase();
     const element = document.getElementById(elementId);
     if (element) {
