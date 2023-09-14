@@ -21,7 +21,9 @@
 }
 
 .ParticipateDiv {
-  flex-direction: row-reverse;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 /* EventCard common componant css Ends here. */
