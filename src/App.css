@@ -13,7 +13,7 @@
   border: 1px solid rgb(156, 75, 255);
   max-width: 345px;
   background-color: #151524 !important;
-  margin-right: 5%;
+  text-align: center;
 }
 
 .Componants {
@@ -27,11 +27,6 @@
 }
 
 /* EventCard common componant css Ends here. */
-
-.App {
-  text-align: center;
-}
-
 .navBar {
   display: flex;
   flex-direction: row;
@@ -49,7 +44,7 @@
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.mianBody {
+body{
   background: url('./Assets/Images/bg.svg');
   background-size: 100%;
   background-attachment: fixed;
@@ -83,6 +78,7 @@
 .Welcome {
   display: flex;
   flex-direction:column;
+  text-align: center;
 }
 
 .LogoAnimation {
@@ -137,6 +133,7 @@
   opacity: 0.5;
   margin: 0;
   text-shadow: 0 0 5px #ff0000;
+  text-align: center;
 }
 
 .AboutUsText {
@@ -212,10 +209,10 @@
   flex-direction: column;
 }
 
-.ThreeEventCards {
+.EventsCardsDivs, .ThreeEventCards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 48px;
 }
 
 .expired-notice {
