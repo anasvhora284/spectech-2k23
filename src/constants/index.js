@@ -3,7 +3,7 @@ export const pages = [
   "Schedule",
   "About",
   "Events",
-  "Sponsor",
+  "Sponsors",
   "Team",
   "Glimps",
 ];

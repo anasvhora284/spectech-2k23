@@ -7,6 +7,7 @@ import AboutUsIllustration from "../Assets/Images/aboutus-illustartion.png";
 import ComingSoonImg from "../Assets/Images/ComingSoon.jpg";
 import EventCard from "../Componants/EventCard.js";
 import Header from "../Componants/Header";
+import SponsorIs from "../Componants/Sponsors";
 import { useNavigate } from "react-router-dom";
 import { givenDateString } from "../constants";
 
@@ -125,6 +126,27 @@ const Home = () => {
                 View More Events
               </span>
             </button>
+          </div>
+        </Container>
+
+        <Container className="SponsorsContainer" id="sponsors">
+          <div className="Sponsorsbg">
+            <p>sponsors</p>
+          </div>
+
+          <div className="SponsorsDiv flex flex-wrap justify-around gap-15">
+            <SponsorIs imgSrc={ComingSoonImg} />
+            <SponsorIs imgSrc={ComingSoonImg} />
+            <SponsorIs imgSrc={ComingSoonImg} />
+            <SponsorIs imgSrc={ComingSoonImg} />
+            <SponsorIs imgSrc={ComingSoonImg} />
+            <SponsorIs imgSrc={ComingSoonImg} />
+          </div>
+        </Container>
+
+        <Container className="TeamsContainer" id="teams">
+          <div className="Teamsbg">
+            <p>Team</p>
           </div>
         </Container>
       </div>

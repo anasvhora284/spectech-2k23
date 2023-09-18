@@ -31,6 +31,10 @@ const Header = () => {
       Scrollto("about");
       setCurrentPage("About");
     }
+    if (location.pathname.includes("sponsors")) {
+      setCurrentPage("Sponsors");
+      Scrollto("sponsors");
+    }
   }, [location]);
 
   const handleOpenNavMenu = (event) => {
@@ -42,6 +46,8 @@ const Header = () => {
       navigate("/home");
     } else if (page === "About") {
       navigate("/about");
+    } else if (page === "Sponsors") {
+      navigate("/sponsors");
     }
     setCurrentPage(page);
     handleCloseNavMenu();

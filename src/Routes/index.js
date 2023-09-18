@@ -19,6 +19,10 @@ const router = createBrowserRouter([
     path: "/events",
     element: <EventsPage />,
   },
+  {
+    path: "/sponsors",
+    element: <HomePage />,
+  },
 ]);
 
 export default router;
