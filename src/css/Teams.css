@@ -1,0 +1,13 @@
+.TeamMemberDiv {
+    min-width: 250px;
+}
+
+.TeamMemberDiv > div {
+    background-color: #131322;
+}
+
+@media screen and (min-width: 319px) and (max-width: 767px){
+    .team-members {
+        flex-direction: column;
+    }
+}

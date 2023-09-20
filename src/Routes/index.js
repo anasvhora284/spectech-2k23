@@ -1,5 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import EventsPage from "../pages/EventsPage";
+import Events from "../components/Event_card";
 import HomePage from "../pages/HomePage";
 
 const router = createBrowserRouter([
